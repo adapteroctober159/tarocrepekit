@@ -1,4 +1,4 @@
-# detector-e2347c
+# detector-47508a
 
 A Python detector utility.
 
